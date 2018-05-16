@@ -9,48 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">chrome Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">40,997</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">firefox Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">23,663</td><td></td><td></td></tr>
-<tr><td><a href="#t2">ie</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,081</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">67,741</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">chrome Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">48,052</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browserLaunchPrg.Finance.LinkTesting</td><td><a href="#m0">linkTesting</a></td><td rowspan="1">1526372183281</td><td rowspan="1">2317</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">firefox Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browserLaunchPrg.Finance.LinkTesting</td><td><a href="#m1">linkTesting</a></td><td rowspan="1">1526372202807</td><td rowspan="1">2108</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">ie &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">browserLaunchPrg.Finance.LinkTesting</td><td><a href="#m2">killProcess</a></td><td rowspan="1">1526372214861</td><td rowspan="1">15</td></tr><tr><th colspan="4">ie &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">browserLaunchPrg.Finance.LinkTesting</td><td><a href="#m3">linkTesting</a></td><td rowspan="1">1526372214539</td><td rowspan="1">322</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">browserLaunchPrg.Finance.TC001_LoginPage</td><td><a href="#m0">customerLogin</a></td><td rowspan="1">1526459187578</td><td rowspan="1">4711</td></tr></tbody>
 </table>
-<h2>chrome Test</h2><h3 id="m0">browserLaunchPrg.Finance.LinkTesting#linkTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>firefox Test</h2><h3 id="m1">browserLaunchPrg.Finance.LinkTesting#linkTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ie</h2><h3 id="m2">browserLaunchPrg.Finance.LinkTesting#killProcess</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DESKTOP-T1UAQOT&apos;, ip: &apos;192.168.0.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:45227/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 9b174b02-0571-4cbd-a878-15dec87af0ce
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
-	at browserLaunchPrg.Finance.LinkTesting.killProcess(LinkTesting.java:31)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">browserLaunchPrg.Finance.LinkTesting#linkTesting</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == .//*[@id=&apos;nav-xshop&apos;]/a[2] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 321 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;DESKTOP-T1UAQOT&apos;, ip: &apos;192.168.0.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:45227/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 9b174b02-0571-4cbd-a878-15dec87af0ce
-*** Element info: {Using=xpath, value=.//*[@id=&apos;nav-xshop&apos;]/a[2]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at browserLaunchPrg.Finance.LinkTesting.linkTesting(LinkTesting.java:24)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chrome Test</h2><h3 id="m0">browserLaunchPrg.Finance.TC001_LoginPage#customerLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
