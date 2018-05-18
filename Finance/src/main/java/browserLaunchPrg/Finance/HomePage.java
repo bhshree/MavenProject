@@ -17,9 +17,6 @@ public class HomePage
 	{
 		PageFactory.initElements(driver,this);
 	}
-	/**
-	 * @author admin
-	 */
 	
 	public void Login()
 	{
@@ -28,10 +25,6 @@ public class HomePage
 		passwd.sendKeys("password");
 		SubmitLogin.click();
 	}
-	/**
-	 * @param
-	 * @return
-	 */
 	
 	public String VerrifyLoginPage()
 	{

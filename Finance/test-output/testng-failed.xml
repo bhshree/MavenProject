@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="ie Test(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="browserLaunchPrg.Finance.TC001_LoginPage">
+        <methods>
+          <include name="kilProcess"/>
+          <include name="setUp"/>
+          <include name="customerLogin"/>
+        </methods>
+      </class> <!-- browserLaunchPrg.Finance.TC001_LoginPage -->
+    </classes>
+  </test> <!-- ie Test(failed) -->
   <test thread-count="5" name="chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -13,4 +25,16 @@
       </class> <!-- browserLaunchPrg.Finance.TC001_LoginPage -->
     </classes>
   </test> <!-- chrome Test(failed) -->
+  <test thread-count="5" name="firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="browserLaunchPrg.Finance.TC001_LoginPage">
+        <methods>
+          <include name="kilProcess"/>
+          <include name="setUp"/>
+          <include name="customerLogin"/>
+        </methods>
+      </class> <!-- browserLaunchPrg.Finance.TC001_LoginPage -->
+    </classes>
+  </test> <!-- firefox Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

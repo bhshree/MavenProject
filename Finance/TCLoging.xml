@@ -7,4 +7,18 @@
       <class name="browserLaunchPrg.Finance.TC001_LoginPage"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test thread-count="5" name="firefox Test">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="browserLaunchPrg.Finance.TC001_LoginPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ie Test">
+  <parameter name="browser" value="ie"></parameter>
+    <classes>
+      <class name="browserLaunchPrg.Finance.TC001_LoginPage"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
