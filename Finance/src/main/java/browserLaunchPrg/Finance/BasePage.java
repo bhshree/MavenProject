@@ -4,12 +4,17 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage 
 {
@@ -53,6 +58,30 @@ public class BasePage
 		driver.manage().window().maximize();
 		
 		
+	}
+	/**
+	 * T
+	 * @return
+	 */
+	public static int randomNumber()
+	{
+		Random r=new Random();
+		int random=r.nextInt(9999);
+		return 0;
+		
+	}
+	
+	
+	public void elementVisible(int Time,WebElement element)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, Time);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	public void selectOption(WebElement element,int option)
+	{
+		Select sel=new Select(element);
+		sel.selectByIndex(option);
 	}
 
 	}
