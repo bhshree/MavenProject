@@ -63,6 +63,7 @@ public class BasePage
 	public static int randomNumber()
 	{
 		Random r=new Random();
+		@SuppressWarnings("unused")
 		int random=r.nextInt(9999);
 		return 0;
 		
